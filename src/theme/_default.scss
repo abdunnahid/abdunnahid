@@ -233,6 +233,9 @@ h6 {
         .label {
           font-weight: 700;
         }
+        .separator {
+          margin-right: 5px;
+        }
       }
 
       &:not(:last-child) {

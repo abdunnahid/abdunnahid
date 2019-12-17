@@ -1,0 +1,138 @@
+@import '../../theme/variables';
+
+#code-snaps {
+  .projects {
+    margin-bottom: 60px;
+
+    .content {
+      padding-top: 30px;
+
+      .inner-projects {
+        margin: 0;
+        .project-items {
+          margin-left: 15px;
+          margin-right: 15px;
+          padding-bottom: 15px;
+
+          .single-item {
+            margin-bottom: 30px;
+
+            .item-wrapper {
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              height: 100%;
+
+              .image {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+
+                img {
+                  max-width: 100%;
+                  width: 100%;
+                  transition: 0.3s ease-in-out;
+                }
+              }
+
+              .overlay {
+                position: absolute;
+                overflow: hidden;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s ease-in-out;
+
+                .view-more {
+                  position: absolute;
+                  top: 15px;
+                  right: 15px;
+                  line-height: 1;
+                  padding: 12px 15px;
+                  transform: translateX(50%);
+                  transition: 0.4s ease-in-out;
+
+                  &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    border: 1px solid transparent;
+                    transition: 0.4s ease-in-out;
+                  }
+
+                  i {
+                    margin-right: 5px;
+                  }
+
+                  &:hover:before {
+                    opacity: 0;
+                    transform: scale(1.2, 1.2);
+                  }
+                }
+
+                .image-info {
+                  position: absolute;
+                  left: 15px;
+                  bottom: 11px;
+                  right: 15px;
+                  transform: translateX(-50%);
+                  transition: 0.3s ease-in-out;
+
+                  .project-name {
+                    text-transform: uppercase;
+                    line-height: 1.3;
+                    display: block;
+                  }
+
+                  .project-tags {
+                    font-size: 0.85em;
+
+                    i {
+                      margin-right: 5px;
+                    }
+
+                    .tag-label {
+                      text-transform: capitalize;
+                    }
+                  }
+                }
+              }
+
+              &:hover {
+                .overlay {
+                  opacity: 1;
+                  visibility: visible;
+
+                  .view-more {
+                    transform: translateX(0);
+                  }
+
+                  .image-info {
+                    transform: translateX(0);
+                  }
+                }
+
+                .image img {
+                  transform: scale(1.15);
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.project-popup {
+  max-width: 1000px;
+  height: 90vh;
+}

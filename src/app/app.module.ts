@@ -10,6 +10,7 @@ import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { BlogComponent } from './blog/blog.component';
 import { UnderConstructionComponent } from './@components/under-construction/under-construction.component';
+import { CodeSnapsComponent } from './code-snaps/code-snaps.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UnderConstructionComponent } from './@components/under-construction/und
     MyPortfolioComponent,
     ContactMeComponent,
     BlogComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    CodeSnapsComponent
   ],
   imports: [
     BrowserModule,

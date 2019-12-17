@@ -6,6 +6,7 @@ import { MyResumeComponent } from './my-resume/my-resume.component';
 import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { BlogComponent } from './blog/blog.component';
+import { CodeSnapsComponent } from './code-snaps/code-snaps.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent
+  },
+  {
+    path: 'code-snaps',
+    component: CodeSnapsComponent
   },
   {
     path: 'contact',

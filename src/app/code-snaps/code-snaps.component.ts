@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 declare const $;
-@Component({
-  selector: 'app-my-portfolio',
-  templateUrl: './my-portfolio.under-construction.component.html',
-  styleUrls: ['./my-portfolio.component.scss']
-})
-export class MyPortfolioComponent implements OnInit {
 
+@Component({
+  selector: 'app-code-snaps',
+  templateUrl: './code-snaps.component.html',
+  styleUrls: ['./code-snaps.component.scss']
+})
+export class CodeSnapsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
     this.initMagificPopup();
-    this.initPortfolioFilter();
+    this.initFilter();
   }
 
   initMagificPopup() {
     // For portfolio item
-    $('#portfolio .projects .inner-projects .project-items .item-wrapper .overlay').magnificPopup({
+    $('#code-snaps .projects .inner-projects .project-items .item-wrapper .overlay').magnificPopup({
       delegate: 'a',
       type: 'inline',
       removalDelay: 300,
@@ -33,7 +33,7 @@ export class MyPortfolioComponent implements OnInit {
     });
   }
 
-  initPortfolioFilter() {
+  initFilter() {
     // Checking if all images are loaded
     $('.projects .inner-projects .project-items').imagesLoaded(function () {
       // Init isotope once all images are loaded
@@ -62,5 +62,6 @@ export class MyPortfolioComponent implements OnInit {
       });
     });
   }
+
 
 }

@@ -359,6 +359,7 @@ html[data-theme="dark"] {
 
     .project-filters a {
       border-color: lighten($light-primary-color, 10%);
+
       &.current {
         background-color: lighten($light-primary-color, 10%);
         color: $white;
@@ -851,11 +852,37 @@ html[data-theme="light"] {
       }
     }
 
-    .project-filters a {
-      border-color: $light-primary-color;
-      &.current {
-        background-color: $light-primary-color;
-        color: $white;
+    .project-filters {
+      text-align: center;
+      line-height: 1;
+      padding: 43px 30px 27px;
+
+      a {
+        color: inherit;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: .8rem 1rem;
+        min-width: 6rem;
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+        &.current {
+          font-weight: 700;
+          color: $white;
+          background-color: $light-primary-color;
+        }
+
+        &:first-of-type {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        &:last-of-type {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+
+        i {
+          margin-right: 5px;
+        }
       }
     }
   }
