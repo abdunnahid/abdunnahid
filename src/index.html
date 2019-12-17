@@ -49,6 +49,31 @@
   <script src="./assets/js/particel.js"></script>
   <!-- JS Files Ends -->
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBeVNC9E27g57yHkjkxLKR70zww3vjxXsc",
+      authDomain: "abdun-nahid.firebaseapp.com",
+      databaseURL: "https://abdun-nahid.firebaseio.com",
+      projectId: "abdun-nahid",
+      storageBucket: "abdun-nahid.appspot.com",
+      messagingSenderId: "309019079647",
+      appId: "1:309019079647:web:c6bc20ace812f5669f8a6a",
+      measurementId: "G-0BBK7K238B"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+  </script>
+
 </body>
 
 </html>
