@@ -19,13 +19,14 @@
         <div class="container">
           <!-- Title Starts -->
           <div class="title">
-            <h5>Blog Details</h5>
+            <h5>{{pageTitle}}</h5>
           </div>
           <!-- Title Ends -->
           <!-- Content Starts -->
           <div class="content">
-            <!-- <img src="../../../assets/articles/test.md" alt=""> -->
-            <markdown [src]="'assets/articles/test.md'" (load)="onLoad($event)" (error)="onError($event)"></markdown>
+            <div class="article" *ngIf="articlePath">
+              <markdown [src]="articlePath" (load)="onLoad($event)" (error)="onError($event)"></markdown>
+            </div>
           </div>
           <!-- Content Ends -->
         </div>

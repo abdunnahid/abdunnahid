@@ -1,0 +1,20 @@
+@import "../../../theme/variables";
+
+.title {
+  h5 {
+    color: $light-primary-color;
+    font-weight: 600;
+  }
+}
+
+.article {
+
+    padding-bottom: 4rem;
+
+  // overriding markdown css
+  ::ng-deep markdown {
+    img {
+      width: 100%;
+    }
+  }
+}

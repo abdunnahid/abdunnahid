@@ -1,0 +1,50 @@
+@import "../../theme/variables";
+
+.articles {
+  display: flex;
+//   justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+  margin: 0 -1rem;
+
+  .article-card {
+    margin-top: 1rem;
+    width: 35rem;
+    height: 35rem;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 1rem 3rem;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+      padding: 1rem;
+      width: 100%;
+      background: rgba($light-primary-color, 0.8);
+      h2 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        // color: $light-primary-color;
+        color: #fff;
+        margin-bottom: 5px;
+      }
+      p {
+          text-align: right;
+          span {
+            background-color: #fff;
+            padding: 2px 1rem;
+            color: $light-primary-color;
+            border-radius: 3rem;
+            font-size: 1.2rem;
+          }
+      }
+    }
+  }
+}

@@ -13,8 +13,9 @@ export class BlogComponent implements OnInit {
   ngOnInit() {
   }
 
-  gotoDetails(): void {
+  gotoDetails(id, title): void {
     this.router.navigateByUrl(`blog/asdasdasd`);
+    this.router.navigate(['id'])
   }
 
 }

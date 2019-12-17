@@ -1,8 +1,10 @@
-# Lazy Angular Material
+![webpack-bundle-analyzer](assets/articles/starting-with-angular-material-v7/starting-with-angular-material-v7.hero.jpg)
 
-**_Lazy Angular Material_** is an Angular project designed with _Angular Material_ and _Angular Lazyloading_ feature.
+## Quick Starter For Angular Material 7
 
-## Structuring the Project
+If you are not interested in bla bla bla go directly to the [**repo**](https://github.com/abdunnahid/lazy-angular-material)  
+
+### Structuring the Project
 
 Create the project
 
@@ -32,7 +34,7 @@ ng g c dashboard
 ng g c dashboard/overview
 ng g c dashboard/clients
 ```
-## Install Angular Material
+### Install Angular Material
 
 ```bash
 ng add @angular/material
@@ -43,7 +45,7 @@ Create Angular Material module
 ng g m angular-material
 ```
 
-## Overwrite Material CSS in Component SCSS Fil
+### Overwrite Material CSS in Component SCSS File
 
 Use **_/deep/_** before class name.
 
@@ -72,9 +74,9 @@ Use **_/deep/_** before class name.
 }
 ```
 
-# Deployment
+### Deployment
 
-### webpack-bundle-analyzer
+#### webpack-bundle-analyzer
 ```bash
 npm i webpack-bundle-analyzer --save-dev
 ```
@@ -94,7 +96,7 @@ ng build --prod --stats-json
 npm run stats
 ```
 
-### Remove all console.log in Production
+#### Remove all console.log in Production
 
 **Add the code snipets below to _main.ts_ file**
 ```typescript
@@ -104,7 +106,7 @@ if (environment.production) {
 }
 ```
 
-### Add Global Error Handler Service
+#### Add Global Error Handler Service
 
 **Create a service extending ErrorHandler class from _@angular/core_**
 ```typescript
@@ -137,12 +139,12 @@ providers: [
 ]
 ```
 
-# Useful Tools
+### Useful Tools
 **Angular Console:** [angularconsole.com](https://angularconsole.com/)  
 **Angular Augury:** [augury.rangle.io](https://augury.rangle.io/)  
 **Webpack Bundle Analyzer:** [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)  
 
-# Useful Resources
+### Useful Resources
 **Tips and tricks 1:** [itnext.io](https://itnext.io/angular-tips-and-tricks-ec7f548670c1)  
 **Tips and tricks 2:** [espeo.eu](https://espeo.eu/blog/30-angular-and-ts-tricks-and-tips-that-will-improve-your-application/)  
 **Tips and tricks 3:** [sitepoint.com](https://www.sitepoint.com/10-essential-typescript-tips-tricks-angular/)  

@@ -24,7 +24,18 @@
           <!-- Title Ends -->
           <!-- Content Starts -->
           <div class="content">
-            <app-under-construction (click)="gotoDetails()"></app-under-construction>
+            <div class="articles">
+              <div class="article-card material-shadow"
+              routerLink="starting-with-angular-material-v7" 
+              [queryParams]="{ title: 'Starting with Angular & Angular Material (v7)' }">
+              
+                <img src="assets/articles/starting-with-angular-material-v7/starting-with-angular-material-v7.jpg">
+                <div class="info">
+                  <h2>Starting with Angular & Angular Material (v7)</h2>
+                  <p><span>29 May 2019</span></p>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Content Ends -->
         </div>
