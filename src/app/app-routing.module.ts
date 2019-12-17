@@ -8,6 +8,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { BlogComponent } from './blog/blog.component';
 import { CodeSnapsComponent } from './code-snaps/code-snaps.component';
 import { LibrariesComponent } from './libraries/libraries.component';
+import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent
+  },
+  {
+    path: 'blog/:id',
+    component: BlogDetailsComponent
   },
   {
     path: 'code-snaps',

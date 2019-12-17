@@ -12,6 +12,7 @@ import { BlogComponent } from './blog/blog.component';
 import { UnderConstructionComponent } from './@components/under-construction/under-construction.component';
 import { CodeSnapsComponent } from './code-snaps/code-snaps.component';
 import { LibrariesComponent } from './libraries/libraries.component';
+import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LibrariesComponent } from './libraries/libraries.component';
     BlogComponent,
     UnderConstructionComponent,
     CodeSnapsComponent,
-    LibrariesComponent
+    LibrariesComponent,
+    BlogDetailsComponent
   ],
   imports: [
     BrowserModule,
