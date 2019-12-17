@@ -24,7 +24,8 @@
           <!-- Title Ends -->
           <!-- Content Starts -->
           <div class="content">
-            <app-under-construction></app-under-construction>
+            <!-- <img src="../../../assets/articles/test.md" alt=""> -->
+            <markdown [src]="'assets/articles/test.md'" (load)="onLoad($event)" (error)="onError($event)"></markdown>
           </div>
           <!-- Content Ends -->
         </div>

@@ -13,6 +13,8 @@ import { UnderConstructionComponent } from './@components/under-construction/und
 import { CodeSnapsComponent } from './code-snaps/code-snaps.component';
 import { LibrariesComponent } from './libraries/libraries.component';
 import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { BlogDetailsComponent } from './blog/blog-details/blog-details.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient })
   ],
   providers: [],
   bootstrap: [AppComponent]

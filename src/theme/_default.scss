@@ -85,7 +85,7 @@ video {
   outline: 0;
   box-sizing: border-box;
   font: inherit;
-  font-size: 100%;
+  font-size: 14px;
   vertical-align: baseline;
 }
 
@@ -97,6 +97,7 @@ body {
 html {
   box-sizing: border-box;
   overflow-y: auto;
+  font-size: 62.5%; /* Now 10px = 1rem! */
 }
 
 html.transition,
@@ -140,42 +141,42 @@ h1 {
   font-family: $font_2, $font_1;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 4.209em;
+  font-size: 4.2rem;
 }
 
 h2 {
   font-family: $font_2, $font_1;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 3.157em;
+  font-size: 3.6rem;
 }
 
 h3 {
   font-family: $font_2, $font_1;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 2.369em;
+  font-size: 3.2rem;
 }
 
 h4 {
   font-family: $font_2, $font_1;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 1.777em;
+  font-size: 2.6rem;
 }
 
 h5 {
   font-family: $font_2, $font_1;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 1.333em;
+  font-size: 2rem;
 }
 
 h6 {
   font-family: $font_2, $font_1;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 1em;
+  font-size: 1.6rem;
 }
 
 .container {

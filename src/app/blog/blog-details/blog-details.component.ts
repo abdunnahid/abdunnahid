@@ -12,4 +12,13 @@ export class BlogDetailsComponent implements OnInit {
   ngOnInit() {
   }
 
+  onLoad(e): void {
+    // console.log("TCL: BlogDetailsComponent -> constructor -> e", e)
+
+  }
+  onError(e): void {
+    console.log("TCL: BlogDetailsComponent -> constructor -> e", e)
+
+  }
+
 }
