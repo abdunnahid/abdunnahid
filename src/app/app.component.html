@@ -1,0 +1,114 @@
+<div id="particles"></div>
+
+<!-- Sidebar Wrapper Starts -->
+<div id="sidebar-wrapper">
+  <!-- Head Sidebar Starts -->
+  <div id="head-sidebar">
+
+    <!-- Close Button Starts -->
+    <i class="far fa-times-circle fa-2x close-button" (click)="closeButton()"></i>
+    <!-- Close Button Ends -->
+
+    <!-- Circle Image Starts -->
+    <div class="circle-image-holder">
+      <img src="../assets/img/myphoto.jpg" alt="myphoto">
+    </div>
+    <!-- Circle Image Ends -->
+
+    <!-- Name Section Starts -->
+    <h5 class="name">Andun Nahid</h5>
+    <!-- Name Section Ends -->
+
+    <!-- Passion Section Starts -->
+    <span class="passion"></span>
+    <!-- Passion Section Ends -->
+
+  </div>
+  <!-- Head Sidebar Ends -->
+
+  <!-- Body Sidebar Starts -->
+  <div id="body-sidebar" data-simplebar class="simple-bar-track-position-left">
+    <ul>
+      <!-- Single Menu Sidebar Starts -->
+      <li data-target="home" routerLink="home" routerLinkActive="active" (click)="sidemenuRouting('home')">
+        <i class="fas fa-home fa-2x"></i>
+        <h6>Home</h6>
+      </li>
+      <!-- Single Menu Sidebar Ends -->
+      <!-- Single Menu Sidebar Starts -->
+      <li data-target="about" routerLink="about" routerLinkActive="active" (click)="sidemenuRouting('about')">
+        <i class="fas fa-id-card fa-2x"></i>
+        <h6>About</h6>
+      </li>
+      <!-- Single Menu Sidebar Ends -->
+      <!-- Single Menu Sidebar Starts -->
+      <li data-target="resume" routerLink="resume" routerLinkActive="active" (click)="sidemenuRouting('resume')">
+        <i class="fas fa-newspaper fa-2x"></i>
+        <h6>Resume</h6>
+      </li>
+      <!-- Single Menu Sidebar Starts -->
+      <li data-target="portfolio" routerLink="portfolio" routerLinkActive="active" (click)="sidemenuRouting('portfolio')">
+        <i class="fas fa-toolbox fa-2x"></i>
+        <h6>Portfolio</h6>
+      </li>
+      <!-- Single Menu Sidebar Ends -->
+
+      <!-- Single Menu Sidebar Starts -->
+      <li data-target="portfolio" routerLink="blog" routerLinkActive="active" (click)="sidemenuRouting('blog')">
+        <i class="fas fa-feather-alt fa-2x"></i>
+        <h6>Blog</h6>
+      </li>
+      <!-- Single Menu Sidebar Ends -->
+
+      <!-- Single Menu Sidebar Starts -->
+      <li data-target="contact" routerLink="contact" routerLinkActive="active" (click)="sidemenuRouting('contact')">
+        <i class="fas fa-envelope fa-2x"></i>
+        <h6>Contact Me</h6>
+      </li>
+      <!-- Single Menu Sidebar Ends -->
+    </ul>
+  </div>
+  <!-- Body Sidebar Ends -->
+</div>
+<!-- Sidebar Wrapper Ends -->
+
+<!-- Main Content Wrapper Starts -->
+<div id="main-content-wrapper">
+
+  <!-- Overlay Starts -->
+  <div class="overlay" (click)="closeButton()"></div>
+  <!-- Overlay Ends -->
+
+  <!-- Background Of The Head Main Content Starts -->
+  <div id="bg-head-main-content"></div>
+  <!-- Background Of The Head Main Content Ends -->
+
+  <!-- Background Of The Body Main Content Starts -->
+  <div id="bg-body-main-content"></div>
+  <!-- Background Of The Body Main Content Ends -->
+
+  <!-- Fixed Hamburger Menu Starts -->
+  <div id="fixed-hamburger-menu">
+    <div class="hamburger-menu" (click)="hamburgerMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- Fixed Hamburger Menu Ends -->
+
+  <!-- Fixed Theme Switch Wrapper Starts -->
+  <!-- <div id="fixed-theme-switch-wrapper">
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox-theme-switch">
+        <input [checked]="theme === 1" type="checkbox" id="checkbox-theme-switch" (change)="switchTheme($event)" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div> -->
+  <!-- Fixed Theme Switch Wrapper Ends -->
+
+  <router-outlet></router-outlet>
+
+</div>
+<!-- Main Content Wrapper Ends -->

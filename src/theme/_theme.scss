@@ -1,0 +1,972 @@
+@import './variables';
+
+html[data-theme="dark"] {
+  body {
+    color: $white;
+    background: $white;
+  }
+
+  #particles {
+    background-color: darken($dark-primary-color, 5%);
+  }
+
+  .project-popup {
+    background: $white;
+    color: #333;
+
+    .project-name {
+      border-bottom-color: #eee;
+      color: $light-primary-color;
+    }
+
+    .project-detail .button-wrapper a {
+      color: $light-primary-color;
+      border: 1px solid $light-primary-color;
+
+      &:hover {
+        color: $white;
+        background: $light-primary-color;
+
+        &:before {
+          border-color: $light-primary-color;
+        }
+      }
+    }
+  }
+
+  #sidebar-wrapper {
+    #head-sidebar {
+      @media (max-width: 991px) {
+        background: darken($dark-primary-color, 5%);
+      }
+
+      .close-button {
+        color: #959cb6;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      .passion {
+        color: #959cb6;
+      }
+
+      h5.name {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+
+    #body-sidebar {
+      background: lighten($dark-primary-color, 5%);
+
+      ul {
+        margin: 0 -30px;
+
+        li {
+          color: $white;
+
+          &.active {
+            height: 100px;
+            background: $dark-primary-color;
+            color: $white;
+            position: relative;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 20px;
+              width: 100%;
+              background-color: lighten($dark-primary-color, 5%);
+              border-bottom-right-radius: 3rem;
+            }
+
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 20px;
+              width: 100%;
+              background-color: lighten($dark-primary-color, 5%);
+              border-top-right-radius: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #main-content-wrapper {
+    #bg-head-main-content {
+      background: darken($dark-primary-color, 5%);
+    }
+
+    #bg-body-main-content {
+      background: lighten($dark-primary-color, 5%);
+    }
+
+    #fixed-hamburger-menu .hamburger-menu>span {
+      background: $white;
+    }
+
+    #fixed-theme-switch-wrapper .theme-switch-wrapper .theme-switch {
+      .slider {
+        background: lighten($dark-primary-color, 10%);
+
+        &:before {
+          background: $white;
+        }
+      }
+
+      input:checked+.slider {
+        background: #ccc;
+      }
+    }
+
+    >.overlay {
+      background: rgba($black, .5);
+    }
+  }
+
+  #pre-load {
+    background: $dark-primary-color;
+
+    .loader li {
+      background-color: $light-primary-color;
+      box-shadow: 0 80px 20px rgba($light-primary-color, 0.2);
+    }
+  }
+
+  .main-content {
+    .body-content {
+      background: lighten($dark-primary-color, 5%);
+
+      .inner-body-content {
+        background: $dark-primary-color;
+      }
+    }
+
+    &#home .body-content .inner-body-content {
+      .passion-and-origin {
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+      }
+
+      .social-media a {
+        color: lighten($light-primary-color, 10%);
+        border: 1px solid lighten($light-primary-color, 10%);
+
+        &:hover {
+          background: lighten($light-primary-color, 10%);
+          color: darken($dark-primary-color, 5%);
+
+          &:before {
+            border-color: lighten($light-primary-color, 10%);
+          }
+        }
+      }
+
+      .name-section>.name {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+
+    .head-content .inner-top-head-content .main-title {
+      color: lighten($light-primary-color, 10%);
+    }
+  }
+
+  .download-resume {
+    a {
+      color: lighten($light-primary-color, 10%);
+      border: 1px solid lighten($light-primary-color, 10%);
+
+      &:hover {
+        background: lighten($light-primary-color, 10%);
+        color: darken($dark-primary-color, 5%);
+
+        &:before {
+          border-color: lighten($light-primary-color, 10%);
+        }
+      }
+    }
+
+    &:before {
+      background: lighten($dark-primary-color, 5%);
+    }
+
+    &:after {
+      background: lighten($dark-primary-color, 5%);
+    }
+  }
+
+  .mfp-fade.mfp-wrap.mfp-ready .mfp-content .mfp-close {
+    color: $white;
+    background: $light-primary-color;
+  }
+
+  .contact-form .content .inner-contact-form .form-wrapper form .form-group {
+    input {
+      color: #959cb6;
+      border-bottom: 1px solid rgba(28, 28, 28, 0.75);
+      background: rgba(darken($dark-primary-color, 5%), 0.75);
+
+      &:focus {
+        color: $white;
+        border-bottom: 1px solid lighten($light-primary-color, 10%);
+      }
+    }
+
+    textarea {
+      color: #959cb6;
+      border-bottom: 1px solid rgba(28, 28, 28, 0.75);
+      background: rgba(darken($dark-primary-color, 5%), 0.75);
+
+      &:focus {
+        color: $white;
+        border-bottom: 1px solid lighten($light-primary-color, 10%);
+      }
+    }
+
+    &:last-of-type button[type="submit"] {
+      color: lighten($light-primary-color, 10%);
+      border: 1px solid lighten($light-primary-color, 10%);
+      background: transparent;
+
+      &:hover {
+        background: lighten($light-primary-color, 10%);
+        color: darken($dark-primary-color, 5%);
+
+        &:before {
+          border-color: lighten($light-primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  .skills .content .single-grouping-skill>ul {
+    background: rgba(darken($dark-primary-color, 5%), 0.5);
+
+    >li {
+      &.skill-heading {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      &.skill-body .single-skill {
+        .progress-wrapper {
+          background: $white;
+
+          .progress {
+            background: lighten($light-primary-color, 10%);
+          }
+        }
+
+        .percentage {
+          color: #959cb6;
+        }
+
+        .skill-name i {
+          color: lighten($light-primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  .inner-body-content .title {
+    &:before {
+      background: lighten($light-primary-color, 10%);
+    }
+
+    &:after {
+      background: lighten($dark-primary-color, 5%);
+    }
+  }
+
+  .personal-info .content {
+    #profile-info-wrapper #profile-info {
+      p {
+        &.description {
+          color: #959cb6;
+        }
+
+        &.passion span {
+          color: lighten($light-primary-color, 10%);
+        }
+      }
+
+      .button-wrapper a.single-button {
+        color: lighten($light-primary-color, 10%);
+        border: 1px solid lighten($light-primary-color, 10%);
+
+        &:hover {
+          background: lighten($light-primary-color, 10%);
+          color: darken($dark-primary-color, 5%);
+
+          &:before {
+            border-color: lighten($light-primary-color, 10%);
+          }
+        }
+      }
+
+      .profile ul.single-grouping-profile li {
+        .dash {
+          color: #959cb6;
+        }
+
+        .value {
+          color: #959cb6;
+        }
+
+        .label i {
+          color: lighten($light-primary-color, 10%);
+        }
+      }
+    }
+
+    #profile-picture-wrapper #profile-picture:after {
+      border: 10px solid lighten($light-primary-color, 10%);
+    }
+  }
+
+  .projects .content .inner-projects {
+    background: rgba(darken($dark-primary-color, 5%), 0.5);
+
+    .project-items .single-item .item-wrapper .overlay {
+      border: 1px solid $white;
+      background: rgba($dark-primary-color, 0.95);
+
+      .view-more {
+        color: lighten($light-primary-color, 10%);
+        border: 1px solid lighten($light-primary-color, 10%);
+
+        &:hover {
+          background: lighten($light-primary-color, 10%);
+          color: darken($dark-primary-color, 5%);
+
+          &:before {
+            border-color: lighten($light-primary-color, 10%);
+          }
+        }
+      }
+
+      .image-info .project-name {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+
+    .project-filters a {
+      border-color: lighten($light-primary-color, 10%);
+      &.current {
+        background-color: lighten($light-primary-color, 10%);
+        color: $white;
+      }
+    }
+  }
+
+  .fun-facts .content .inner-fun-facts {
+    background: rgba(darken($dark-primary-color, 5%), 0.5);
+
+    .single-fun-fact {
+      .fun-fact-value {
+        color: #959cb6;
+      }
+
+      .fun-fact-icon i {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      .fun-fact-title i {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+  }
+
+  .services .content .single-service ul {
+    background: rgba(darken($dark-primary-color, 5%), 0.5);
+
+    li {
+      &.service-body {
+        color: #959cb6;
+      }
+
+      &.service-icon i {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      &.service-title i {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+  }
+
+  .work-experience .content .single-work-experience>ul {
+    background: rgba(darken($dark-primary-color, 5%), 0.5);
+
+    >li {
+      &.work-experience-body {
+        color: #959cb6;
+      }
+
+      &.work-experience-name-with-place {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      &.work-experience-when i {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      &.work-experience-where i {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+  }
+
+  .contact-info .content .inner-contact-info {
+    .single-contact-info-wrap {
+      background: rgba(darken($dark-primary-color, 5%), 0.5);
+    }
+
+    .single-contact-info {
+      .contact-info-value {
+        color: #959cb6;
+      }
+
+      .contact-info-icon i {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      .contact-info-name i {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+  }
+
+  .interests-and-hobbies .content .inner-interests-and-hobbies {
+    background: rgba(darken($dark-primary-color, 5%), 0.5);
+
+    .single-interest-and-hobby {
+      .interest-and-hobby-icon i {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      .interest-and-hobby-name i {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+  }
+
+  .education .content .single-education>ul {
+    background: rgba(darken($dark-primary-color, 5%), 0.5);
+
+    >li {
+      &.education-name-with-place {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      &.education-when i {
+        color: lighten($light-primary-color, 10%);
+      }
+
+      &.education-where i {
+        color: lighten($light-primary-color, 10%);
+      }
+    }
+  }
+}
+
+html[data-theme="light"] {
+  body {
+    color: #333;
+    background: $light-primary-color;
+  }
+
+  #particles {
+    background-color: darken($light-primary-color, 8%);
+  }
+
+  .project-popup {
+    color: #333;
+    background: $white;
+
+    .project-name {
+      border-bottom-color: #eee;
+      color: $light-primary-color;
+    }
+
+    .project-detail .button-wrapper a {
+      color: $light-primary-color;
+      border: 1px solid $light-primary-color;
+
+      &:hover {
+        background: $light-primary-color;
+        color: $white;
+
+        &:before {
+          border-color: $light-primary-color;
+        }
+      }
+    }
+  }
+
+  #sidebar-wrapper {
+    #body-sidebar {
+      background: $light-primary-color;
+
+      ul {
+        margin: 0 -30px;
+
+        li {
+          color: $white;
+
+          &.active {
+            height: 100px;
+            background-color: $white;
+            color: $light-primary-color;
+            position: relative;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 20px;
+              width: 100%;
+              background-color: $light-primary-color;
+              border-bottom-right-radius: 3rem;
+            }
+
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 20px;
+              width: 100%;
+              background-color: $light-primary-color;
+              border-top-right-radius: 3rem;
+            }
+          }
+        }
+      }
+    }
+
+    #head-sidebar {
+      @media (max-width: 991px) {
+        background: $light-primary-color;
+      }
+
+      .close-button {
+        color: #ccc;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      .passion {
+        color: $white;
+      }
+
+      h5.name {
+        color: $white;
+      }
+    }
+  }
+
+  #main-content-wrapper {
+    #bg-head-main-content {
+      background: $light-primary-color;
+    }
+
+    #bg-body-main-content {
+      background: $light-primary-color;
+    }
+
+    #fixed-hamburger-menu .hamburger-menu>span {
+      background: $white;
+    }
+
+    #fixed-theme-switch-wrapper .theme-switch-wrapper .theme-switch {
+      .slider {
+        background: lighten($dark-primary-color, 10%);
+
+        &:before {
+          background: $white;
+        }
+      }
+
+      input:checked+.slider {
+        background: #ccc;
+      }
+    }
+
+    >.overlay {
+      background: rgba($black, .5);
+    }
+  }
+
+  #pre-load {
+    background: $light-primary-color;
+
+    .loader li {
+      background-color: $dark-primary-color;
+      box-shadow: 0 80px 20px rgba($dark-primary-color, 0.2);
+    }
+  }
+
+  .main-content {
+    .body-content {
+      background: $light-primary-color;
+
+      .inner-body-content {
+        background: $white;
+        // box-shadow: 1px 5px 20px rgba($black,.15);
+      }
+    }
+
+    &#home .body-content .inner-body-content {
+      .name-section {
+        color: #555;
+
+        >.name {
+          color: $light-primary-color;
+        }
+      }
+
+      .passion-and-origin {
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+      }
+
+      .social-media a {
+        color: $light-primary-color;
+        border: 1px solid $light-primary-color;
+
+        &:hover {
+          background: $light-primary-color;
+          color: $white;
+
+          &:before {
+            border-color: $light-primary-color;
+          }
+        }
+      }
+    }
+
+    .head-content .inner-top-head-content .main-title {
+      color: $white;
+    }
+  }
+
+  .download-resume {
+    a {
+      color: $light-primary-color;
+      border: 1px solid $light-primary-color;
+
+      &:hover {
+        background: $light-primary-color;
+        color: $white;
+
+        &:before {
+          border-color: $light-primary-color;
+        }
+      }
+    }
+
+    &:before {
+      background: #ddd;
+    }
+
+    &:after {
+      background: #ddd;
+    }
+  }
+
+  .contact-form .content .inner-contact-form .form-wrapper form .form-group {
+    input {
+      color: #7b7b7b;
+      background: rgba($light-primary-color, 0.1);
+      border-bottom: 1px solid #ccc;
+
+      &:focus {
+        color: #333;
+        border-bottom: 1px solid $light-primary-color;
+      }
+    }
+
+    textarea {
+      color: #7b7b7b;
+      background: rgba($light-primary-color, 0.1);
+      border-bottom: 1px solid #ccc;
+
+      &:focus {
+        color: #333;
+        border-bottom: 1px solid $light-primary-color;
+      }
+    }
+
+    &:last-of-type button[type="submit"] {
+      color: $light-primary-color;
+      border: 1px solid $light-primary-color;
+      background: transparent;
+
+      &:hover {
+        background: $light-primary-color;
+        color: $white;
+
+        &:before {
+          border-color: $light-primary-color;
+        }
+      }
+    }
+  }
+
+  .skills .content .single-grouping-skill>ul {
+    background: rgba($light-primary-color, 0.075);
+
+    >li {
+      &.skill-heading {
+        color: $light-primary-color;
+      }
+
+      &.skill-body .single-skill {
+        .progress-wrapper {
+          background: $white;
+
+          .progress {
+            background: $light-primary-color;
+          }
+        }
+
+        .percentage {
+          color: #7b7b7b;
+        }
+
+        .skill-name i {
+          color: $light-primary-color;
+        }
+      }
+    }
+  }
+
+  .skillbar {
+    background: $white;
+  }
+
+  .skillbar-title {
+    color: #333;
+  }
+
+  .skill-bar-percent {
+    color: $light-primary-color;
+  }
+
+  .mfp-fade.mfp-wrap.mfp-ready .mfp-content .mfp-close {
+    background: $light-primary-color;
+    color: $white;
+  }
+
+  .inner-body-content .title {
+    &:before {
+      background: $light-primary-color;
+    }
+
+    &:after {
+      background: #ddd;
+    }
+  }
+
+  .personal-info .content {
+    #profile-info-wrapper #profile-info {
+      p {
+        &.description {
+          color: #7b7b7b;
+        }
+
+        &.passion span {
+          color: $light-primary-color;
+        }
+      }
+
+      .button-wrapper a.single-button {
+        color: $light-primary-color;
+        border: 1px solid $light-primary-color;
+
+        &:hover {
+          background: $light-primary-color;
+          color: $white;
+
+          &:before {
+            border-color: $light-primary-color;
+          }
+        }
+      }
+
+      .profile ul.single-grouping-profile li {
+        .dash {
+          color: #7b7b7b;
+        }
+
+        .value {
+          color: #7b7b7b;
+        }
+
+        .label i {
+          color: $light-primary-color;
+        }
+      }
+    }
+
+    #profile-picture-wrapper #profile-picture:after {
+      border: 10px solid $light-primary-color;
+    }
+  }
+
+  .projects .content .inner-projects {
+    background: rgba($light-primary-color, 0.075);
+
+    .project-items .single-item .item-wrapper .overlay {
+      border: 1px solid #bbb;
+      background: rgba($white, .85);
+
+      .view-more {
+        color: $light-primary-color;
+        border: 1px solid $light-primary-color;
+
+        &:hover {
+          background: $light-primary-color;
+          color: $white;
+
+          &:before {
+            border-color: $light-primary-color;
+          }
+        }
+      }
+
+      .image-info .project-name {
+        color: $light-primary-color;
+      }
+    }
+
+    .project-filters a {
+      border-color: $light-primary-color;
+      &.current {
+        background-color: $light-primary-color;
+        color: $white;
+      }
+    }
+  }
+
+  .fun-facts .content .inner-fun-facts {
+    background: rgba($light-primary-color, 0.075);
+
+    .single-fun-fact {
+      .fun-fact-value {
+        color: #7b7b7b;
+      }
+
+      .fun-fact-icon i {
+        color: $light-primary-color;
+      }
+
+      .fun-fact-title i {
+        color: $light-primary-color;
+      }
+    }
+  }
+
+  .services .content .single-service ul {
+    background: rgba($light-primary-color, 0.075);
+
+    li {
+      &.service-body {
+        color: #7b7b7b;
+      }
+
+      &.service-icon i {
+        color: $light-primary-color;
+      }
+
+      &.service-title i {
+        color: $light-primary-color;
+      }
+    }
+  }
+
+  .work-experience .content .single-work-experience>ul {
+    background: rgba($light-primary-color, 0.075);
+
+    >li {
+      &.work-experience-body {
+        color: #7b7b7b;
+      }
+
+      &.work-experience-name-with-place {
+        color: $light-primary-color;
+      }
+
+      &.work-experience-when i {
+        color: $light-primary-color;
+      }
+
+      &.work-experience-where i {
+        color: $light-primary-color;
+      }
+    }
+  }
+
+  .contact-info .content .inner-contact-info {
+    .single-contact-info-wrap {
+      background: rgba($light-primary-color, 0.075);
+    }
+
+    .single-contact-info {
+      .contact-info-value {
+        color: #7b7b7b;
+      }
+
+      .contact-info-icon i {
+        color: $light-primary-color;
+      }
+
+      .contact-info-name i {
+        color: $light-primary-color;
+      }
+    }
+  }
+
+  .interests-and-hobbies .content .inner-interests-and-hobbies {
+    background: rgba($light-primary-color, 0.075);
+
+    .single-interest-and-hobby {
+      .interest-and-hobby-icon i {
+        color: $light-primary-color;
+      }
+
+      .interest-and-hobby-name i {
+        color: $light-primary-color;
+      }
+    }
+  }
+
+  .education .content .single-education>ul {
+    background: rgba($light-primary-color, 0.075);
+
+    >li {
+      &.education-name-with-place {
+        color: $light-primary-color;
+      }
+
+      &.education-when i {
+        color: $light-primary-color;
+      }
+
+      &.education-where i {
+        color: $light-primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import './variables';
+.simple-bar-track-position-left {
+  .simplebar-track {
+    left: 0;
+  }
+}
+.simplebar-scrollbar:before {
+  background: $light-primary-color;
+}
