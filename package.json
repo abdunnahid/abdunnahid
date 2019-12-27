@@ -17,6 +17,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:host": "ng serve --host 192.168.31.79 --o",
     "build": "ng build",
     "build:prod": "ng build --prod",
     "deploy": "firebase deploy",
