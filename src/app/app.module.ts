@@ -15,6 +15,11 @@ import { LibrariesComponent } from './libraries/libraries.component';
 import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { SummaryComponent } from './about-me/components/summary/summary.component';
+import { PersonalInfoComponent } from './about-me/components/personal-info/personal-info.component';
+import { FunFactsComponent } from './about-me/components/fun-facts/fun-facts.component';
+import { ServicesComponent } from './about-me/components/services/services.component';
+import { TestimonialComponent } from './about-me/components/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     UnderConstructionComponent,
     CodeSnapsComponent,
     LibrariesComponent,
-    BlogDetailsComponent
+    BlogDetailsComponent,
+    SummaryComponent,
+    PersonalInfoComponent,
+    FunFactsComponent,
+    ServicesComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
