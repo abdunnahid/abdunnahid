@@ -30,7 +30,7 @@
   <div id="body-sidebar" data-simplebar class="simple-bar-track-position-left">
     <ul>
       <!-- Single Menu Sidebar Starts -->
-      <li data-target="home" routerLink="home" routerLinkActive="active" (click)="sidemenuRouting('home')">
+      <li data-target="home" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" (click)="sidemenuRouting('/')">
         <i class="fas fa-home fa-2x"></i>
         <h6>Home</h6>
       </li>

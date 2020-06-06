@@ -146,7 +146,8 @@ export class AppComponent implements OnInit {
         },
         retina_detect: true
       };
-    } else {
+    }
+    else {
       this.particleConfig = {
         particles: {
           number: {
