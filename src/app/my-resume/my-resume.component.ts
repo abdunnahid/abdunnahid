@@ -11,6 +11,10 @@ export class MyResumeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.initSkillbar();
+  }
+
+  initSkillbar() {
     $('.skillbar').each(function () {
       $(this).find('.skillbar-bar').animate({
         width: $(this).attr('data-percent')
@@ -27,10 +31,6 @@ export class MyResumeComponent implements OnInit {
         }
       });
     });
-  }
-
-  initSkillbar(width: number) {
-
   }
 
 }

@@ -1,133 +1,82 @@
 @import '../../theme/variables';
 
-.projects {
-	margin-bottom: 60px;
-	.content {
-		padding-top: 30px;
-		.inner-projects {
-			margin: 0;
-			.project-filters {
-				text-align: center;
-				line-height: 1;
-				
-				a {
-					color: inherit;
-					display: inline-block;
-					margin-right: 16px;
-					margin-bottom: 16px;
-					text-transform: uppercase;
-					border-width: 1px;
-					border-style: solid;
-    				padding: .4rem .6rem;
-					&.current {
-						font-weight: 700;
-						color: $white;
-					}
-					i {
-						margin-right: 5px;
-					}
-				}
-			}
-			.project-items {
-				margin-left: 15px;
-				margin-right: 15px;
-				padding-bottom: 15px;
-				.single-item {
-					margin-bottom: 30px;
-					.item-wrapper {
-						position: relative;
-						overflow: hidden;
-						width: 100%;
-						height: 100%;
-						.image {
-							position: relative;
-							overflow: hidden;
-							width: 100%;
-							height: 100%;
-							img {
-								max-width: 100%;
-								width: 100%;
-								transition: 0.3s ease-in-out;
-							}
-						}
-						.overlay {
-							position: absolute;
-							overflow: hidden;
-							left: 0;
-							top: 0;
-							width: 100%;
-							height: 100%;
-							opacity: 0;
-							visibility: hidden;
-							transition: 0.3s ease-in-out;
-							.view-more {
-								position: absolute;
-								top: 15px;
-								right: 15px;
-								line-height: 1;
-								padding: 12px 15px;
-								transform: translateX(50%);
-								transition: 0.4s ease-in-out;
-								&:before {
-									content: "";
-									position: absolute;
-									left: 0;
-									top: 0;
-									width: 100%;
-									height: 100%;
-									z-index: 1;
-									border: 1px solid transparent;
-									transition: 0.4s ease-in-out;
-								}
-								i {
-									margin-right: 5px;
-								}
-								&:hover:before {
-									opacity: 0;
-									transform: scale(1.2, 1.2);
-								}
-							}
-							.image-info {
-								position: absolute;
-								left: 15px;
-								bottom: 11px;
-								right: 15px;
-								transform: translateX(-50%);
-								transition: 0.3s ease-in-out;
-								.project-name {
-									text-transform: uppercase;
-									line-height: 1.3;
-									display: block;
-								}
-								.project-tags {
-									font-size: 0.85em;
-									i {
-										margin-right: 5px;
-									}
-									.tag-label {
-										text-transform: capitalize;
-									}
-								}
-							}
-						}
-						&:hover {
-							.overlay {
-								opacity: 1;
-								visibility: visible;
-								.view-more {
-									transform: translateX(0);
-								}
-								.image-info {
-									transform: translateX(0);
-								}
-							}
-							.image img {
-								transform: scale(1.15);
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+.work-experience {
+  margin-bottom: 23px;
+
+  .content {
+    padding-top: 30px;
+
+    .single-work-experience {
+      margin-bottom: 30px;
+
+      &:nth-of-type(odd) {
+        padding-right: 15px;
+
+        @media (max-width: 767px) {
+          padding-right: 0;
+        }
+      }
+
+      &:nth-of-type(even) {
+        padding-left: 15px;
+
+        @media (max-width: 767px) {
+          padding-left: 0;
+        }
+      }
+
+      >ul {
+        height: 100%;
+
+        padding: 25px 30px 23px;
+
+        >li {
+          &.work-experience-name-with-place {
+            margin-bottom: 7px;
+            line-height: 1.3em;
+            display: flex;
+            flex-direction: column;
+
+            .work-experience-name {
+              margin-bottom: 7px;
+            }
+
+            .work-experience-place {
+              .at {
+                color: #7b7b7b;
+                margin-right: 5px;
+                font-size: 12px;
+                font-weight: 500;
+              }
+
+              a {
+                font-weight: 500;
+                color: $light-primary-color;
+                font-size: 14px;
+              }
+
+            }
+          }
+
+          &.work-experience-when-where {
+            margin-bottom: 1rem;
+            color: #7b7b7b;
+            font-size: 13px;
+            span:first-of-type {
+              margin-right: 10px;
+            }
+
+            i {
+              color: $light-primary-color;
+              margin-right: 5px;
+            }
+          }
+
+          &.work-experience-body>ul>li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
 }

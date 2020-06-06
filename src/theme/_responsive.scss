@@ -177,7 +177,6 @@
 
       .inner-body-content {
         top: -220px;
-        height: calc(100% +95px);
       }
     }
 
@@ -362,7 +361,7 @@
     .body-content .inner-body-content {
       left: 30px;
       top: -125px;
-      height: calc(100% +95px);
+      height: calc(100% + 95px);
     }
 
     &#home .body-content .inner-body-content {
@@ -426,7 +425,7 @@
 
       .inner-body-content {
         top: -75px;
-        height: calc(100% +45px);
+        height: calc(100% + 45px);
       }
     }
   }
@@ -497,7 +496,7 @@
         left: 15px;
         right: 15px;
         bottom: 15px;
-        height: calc(100% +45px);
+        height: calc(100% + 45px);
       }
     }
 
@@ -735,7 +734,7 @@
         left: 20px;
         right: 20px;
         bottom: 20px;
-        height: calc(100% +40px);
+        height: calc(100% + 40px);
       }
     }
   }
