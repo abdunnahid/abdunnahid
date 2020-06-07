@@ -12,7 +12,7 @@ enum ThemeEnum {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  // tslint:disable-next-line: use-host-property-decorator
+  // tslint:disable-next-line: no-host-metadata-property
   host: {
     '(window:resize)': 'onResize($event)'
   }
