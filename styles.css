@@ -45,7 +45,7 @@ body {
 
 /* Container for overall page structure */
 .container {
-    width: 90%;
+    width: 85%;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -82,12 +82,21 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    word-spacing: -5px;
+}
+
 p,
 a {
     font-size: 1em;
 }
 
-a {
+a,
+.fa {
     color: var(--link-color);
     text-decoration: none;
 }
@@ -102,6 +111,7 @@ a:hover {
     align-items: center;
     gap: 10px;
 }
+
 .contact-details.cta-container {
     margin-top: 30px;
 }
@@ -120,7 +130,6 @@ a:hover {
     min-width: 180px;
     border: 1px solid var(--cta-color);
     background-color: var(--cta-color);
-    color: var(--cta-color);
     color: var(--text-color-dark);
     border-radius: 5px;
     text-decoration: none;
@@ -131,8 +140,16 @@ a:hover {
     font-weight: 600;
 }
 
+.cta i {
+    color: var(--text-color-dark);
+}
+
 .cta.resume {
     background-color: initial;
+    color: var(--cta-color);
+}
+
+.cta.resume i {
     color: var(--cta-color);
 }
 
@@ -147,6 +164,7 @@ a:hover {
     padding: 20px;
     border-radius: 8px;
 }
+
 .about p {
     margin-bottom: 10px;
 }
@@ -159,13 +177,16 @@ footer {
 
 footer p {
     margin-top: 10px;
+    font-size: .8em;
 }
 
 /* Media Queries */
 @media (max-width: 600px) {
     .header-content {
+        width: 100%;
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     .profile-pic {
@@ -186,12 +207,64 @@ footer p {
         justify-content: center;
     }
 
+    h2 span:not(:nth-child(2)) {
+        display: inline-block;
+        min-width: 172px;
+    }
+
+    h2 span:first-of-type {
+        text-align: end;
+    }
+
     p,
     a {
         font-size: 0.9em;
     }
 
     .container {
-        padding: 10px;
+        padding: 0px;
+    }
+
+    .about {
+        padding: 0;
+        border-radius: 8px;
+    }
+
+    .cta {
+        min-width: 140px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        flex-direction: column;
+        gap: 5px;
+        line-height: 1.2;
+    }
+
+    h2 span {
+        text-align: center !important;
+    }
+
+    h2 span:nth-child(2) {
+        display: none;
+    }
+    h2 span:nth-child(3) {
+        position: relative;
+        font-weight: 300;
+    }
+    h2 span:nth-child(3)::before {
+        content: "(";
+        position: absolute;
+        left: -10px;
+    }
+    h2 span:nth-child(3)::after {
+        content: ")";
+        position: absolute;
+        right: -10px;
     }
 }
