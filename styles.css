@@ -153,6 +153,14 @@ a:hover {
     color: var(--cta-color);
 }
 
+.cta.resume i {
+    color: var(--cta-color);
+}
+
+.cta.resume:hover i {
+    color: var(--text-color-dark);
+}
+
 .cta:hover {
     background-color: var(--cta-color);
     color: var(--text-color);
@@ -253,15 +261,18 @@ footer p {
     h2 span:nth-child(2) {
         display: none;
     }
+
     h2 span:nth-child(3) {
         position: relative;
         font-weight: 300;
     }
+
     h2 span:nth-child(3)::before {
         content: "(";
         position: absolute;
         left: -10px;
     }
+
     h2 span:nth-child(3)::after {
         content: ")";
         position: absolute;
