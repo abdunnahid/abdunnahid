@@ -95,14 +95,47 @@ a {
     font-size: 1em;
 }
 
-a,
-.fa {
+a {
     color: var(--link-color);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--link-color-light);
+}
+
+.icon.linkedin-icon {
+    height: 20px;
+    width: 20px;
+    mask: url("assets/icons/linkedin.svg") no-repeat center;
+}
+
+.icon.github-icon {
+    mask: url("assets/icons/github.svg") no-repeat center;
+}
+
+.icon.mail-icon {
+    mask: url("assets/icons/mail.svg") no-repeat center;
+
+}
+
+.icon.open-in-new-tab-icon {
+    mask: url("assets/icons/open-in-new-tab.svg") no-repeat center;
+}
+
+@media (prefers-color-scheme: dark) {
+    .icon {
+        background-color: var(--link-color-dark);
+    }
 }
 
 .contact-details {
@@ -121,10 +154,6 @@ a:hover {
     align-items: center;
 }
 
-.contact-details i {
-    margin-right: 5px;
-}
-
 .cta {
     padding: 7px 10px;
     min-width: 180px;
@@ -140,8 +169,8 @@ a:hover {
     font-weight: 600;
 }
 
-.cta i {
-    color: var(--text-color-dark);
+.cta.contact-me i {
+    background-color: var(--text-color-dark);
 }
 
 .cta.resume {
@@ -149,16 +178,8 @@ a:hover {
     color: var(--cta-color);
 }
 
-.cta.resume i {
-    color: var(--cta-color);
-}
-
-.cta.resume i {
-    color: var(--cta-color);
-}
-
 .cta.resume:hover i {
-    color: var(--text-color-dark);
+    background-color: var(--text-color-dark);
 }
 
 .cta:hover {
@@ -185,7 +206,18 @@ footer {
 
 footer p {
     margin-top: 10px;
-    font-size: .8em;
+    font-size: .9em;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+footer p a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Media Queries */

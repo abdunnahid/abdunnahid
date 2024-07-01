@@ -10,6 +10,3 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://abdunnahid.com/sitemap.xml
-
-# Crawl-delay directive (optional, for preventing server overload)
-# Crawl-delay: 10
