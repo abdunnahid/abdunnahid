@@ -66,7 +66,13 @@
 <body>
     <header>
         <div class="container header-content">
-            <img src="assets/abdunnahid.png" alt="Abdun Nahid" class="profile-pic">
+            <picture>
+                <source media="(min-width: 1921px)" srcset="assets/profile-pic/abdunnahid.300x300.png">
+                <source media="(min-width: 401px)" srcset="assets/profile-pic/abdunnahid.150x150.png">
+                <source media="(max-width: 400px)" srcset="assets/profile-pic/abdunnahid.100x100.png">
+                <img src="assets/profile-pic/abdunnahid.png" alt="Abdun Nahid" class="profile-pic">
+            </picture>
+            
 
             <div class="header-text">
                 <h1>Abdun Nahid</h1>
