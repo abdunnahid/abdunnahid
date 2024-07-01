@@ -1,0 +1,15 @@
+# robots.txt file for abdunnahid.com
+
+User-agent: *
+Disallow: /private/
+Disallow: /temp/
+
+# Allow all bots to access the main content
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://abdunnahid.com/sitemap.xml
+
+# Crawl-delay directive (optional, for preventing server overload)
+# Crawl-delay: 10
