@@ -207,17 +207,6 @@ footer {
 footer p {
     margin-top: 10px;
     font-size: .9em;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-}
-
-footer p a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Media Queries */
