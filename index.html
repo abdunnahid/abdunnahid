@@ -37,7 +37,7 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Abdun Nahid",
-        "description": "Software Engineer experienced in full-stack development skilled in JavaScript, Node.js, C#, .NET, Angular and Azure Cloud Services"
+        "description": "Software Engineer experienced in full-stack development skilled in JavaScript, Node.js, C#, .NET, Angular and Azure Cloud Services",
         "jobTitle": "Software Engineer | Full-stack Developer",
         "url": "https://abdunnahid.com",
         "sameAs": [
@@ -59,70 +59,73 @@
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 
-    <!-- Fonts & Styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container header-content">
-            <picture>
-                <source media="(max-width: 1920px)" srcset="assets/profile-pic/abdunnahid.300x300.png">
-                <img src="assets/profile-pic/abdunnahid.png" alt="Abdun Nahid" class="profile-pic">
-            </picture>
+        
+        <picture class="profile-photo-container">
+            <source media="(max-width: 1920px)" srcset="assets/profile-pic/abdunnahid.300x300.png">
+            <img src="assets/profile-pic/abdunnahid.png" alt="Abdun Nahid" class="profile-photo">
+        </picture>
+        
+        <div class="header-content">
             
+            <h1 class="title">Abdun Nahid</h1>
+            
+            <h2 class="subtitle">
+                <span>Software Engineer</span>
+                <span>|</span>
+                <span>Full-stack Developer</span>
+            </h2>
 
-            <div class="header-text">
-                <h1>Abdun Nahid</h1>
-                <h2>
-                    <span>Software Engineer</span>
-                    |
-                    Full-stack Developer
-                </h2>
-
-                <div class="contact-details">
-                    <p>
-                        <i class="icon linkedin-icon"></i>
-                        <a href="https://www.linkedin.com/in/abdunnahid/" target="_blank">abdunnahid</a>
-                    </p>
-                    |
-                    <p>
-                        <i class="icon github-icon"></i>
-                        <a href="https://github.com/abdunnahid" target="_blank">abdunnahid</a>
-                    </p>
-                </div>
-                <div class="contact-details cta-container">
-                    <a href="mailto:abdun.nahid@gmail.com" class="cta contact-me">
-                        <i class="icon mail-icon"></i>
-                        <span>Contact Me</span>
-                    </a>
-                    |
-                    <a href="assets/abdunnahid.resume.pdf" class="cta resume" target="_blank">
-                        <span>Resume</span>
-                        <i class="icon open-in-new-tab-icon"></i>
-                    </a>
-                </div>
+            <div class="contact-details">
+                <p>
+                    <i class="icon linkedin-icon"></i>
+                    <a href="https://www.linkedin.com/in/abdunnahid/" target="_blank">abdunnahid</a>
+                </p>
+                <span>|</span>
+                <p>
+                    <i class="icon github-icon"></i>
+                    <a href="https://github.com/abdunnahid" target="_blank">abdunnahid</a>
+                </p>
             </div>
+
+            <div class="cta-container">
+                <a href="mailto:abdun.nahid@gmail.com" class="button button-primary contact-me">
+                    <i class="icon mail-icon"></i>
+                    <span>Contact Me</span>
+                </a>
+                <span>|</span>
+                <a href="assets/abdunnahid.resume.pdf" class="button button-secondary resume" target="_blank">
+                    <span>Resume</span>
+                    <i class="icon open-in-new-tab-icon"></i>
+                </a>
+            </div>
+
         </div>
+
     </header>
+
     <main>
-        <div class="container">
-            <section class="about">
-                <p>
-                    I am a dedicated software engineer specializing in both back-end and front-end development. With a
-                    strong background in developing scalable and high-performance applications, I have successfully
-                    delivered projects tailored for the European market. My expertise includes building and maintaining
-                    microservices, ensuring seamless user experiences, and leading development teams to achieve
-                    technical excellence.
-                </p>
-                <p>
-                    Currently, I am a Senior Back-end Engineer at SELISE Digital Platforms, where I work on developing
-                    and maintaining enterprise-level applications. My passion for technology drives me to continuously
-                    learn and apply new skills to solve complex problems and deliver high-quality software solutions.
-                </p>
-            </section>
-        </div>
+        <section class="about">
+            <p>
+                I am a dedicated software engineer specializing in both back-end and front-end development. With a
+                strong background in developing scalable and high-performance applications, I have successfully
+                delivered projects tailored for the European market. My expertise includes building and maintaining
+                microservices, ensuring seamless user experiences, and leading development teams to achieve
+                technical excellence.
+            </p>
+            <p>
+                Currently, I am a Senior Back-end Engineer at SELISE Digital Platforms, where I work on developing
+                and maintaining enterprise-level applications. My passion for technology drives me to continuously
+                learn and apply new skills to solve complex problems and deliver high-quality software solutions.
+            </p>
+        </section>
     </main>
+
     <footer>
         <div class="container">
             <p>
@@ -137,6 +140,7 @@
             </p>
         </div>
     </footer>
+
 </body>
 
 </html>
