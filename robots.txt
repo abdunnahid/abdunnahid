@@ -3,6 +3,7 @@
 User-agent: *
 Disallow: /private/
 Disallow: /temp/
+Disallow: /abdunnahid.resume.pdf
 
 # Allow all bots to access the main content
 User-agent: *
