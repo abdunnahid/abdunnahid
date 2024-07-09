@@ -7,5 +7,5 @@ A full-stack developer working on the software industry for over 6 years buildin
 
 Explore my journey as a software engineer and get in [touch](https://www.linkedin.com/in/abdunnahid/) if you have any opportunities or questions.
 
-> [![LeetCode user abdunnahid](https://img.shields.io/badge/dynamic/json?style=flat-square&labelColor=black&color=%23ffa116&label=LeetCode%20|%20Total:&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fabdunnahid&logo=leetcode&logoColor=yellow)](https://leetcode.com/abdunnahid/)
-> [![LeetCode Stats](https://leetcard.jacoblin.cool/abdunnahid?theme=forest&font=Sintony&width=1000)](https://leetcode.com/u/abdunnahid/)
+<!-- > [![LeetCode user abdunnahid](https://img.shields.io/badge/dynamic/json?style=flat-square&labelColor=black&color=%23ffa116&label=LeetCode%20|%20Total:&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fabdunnahid&logo=leetcode&logoColor=yellow)](https://leetcode.com/abdunnahid/)
+> [![LeetCode Stats](https://leetcard.jacoblin.cool/abdunnahid?theme=forest&font=Sintony&width=1000)](https://leetcode.com/u/abdunnahid/) -->
